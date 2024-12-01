@@ -1,0 +1,124 @@
+/* Базові стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Змінено */
+}
+
+header {
+    background-color: #00796b; /* Змінено */
+    color: #e0f2f1; /* Змінено */
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #004d40; /* Змінено */
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #ffffff; /* Білий залишено */
+    border-radius: 8px;
+}
+
+.photo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Навігаційне меню */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #00796b; /* Змінено */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: #e0f2f1; /* Змінено */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #004d40; /* Змінено */
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #00796b; /* Змінено */
+    color: #e0f2f1; /* Змінено */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Адаптація під смартфони */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    nav ul li {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+
+    section {
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
+
+    footer {
+        padding: 0.25rem;
+        font-size: 12px;
+    }
+}
